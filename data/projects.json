@@ -1,0 +1,11 @@
+[
+  {
+    "id": "proj-aura",
+    "name": "AURA Voice Agent",
+    "code": "AURA",
+    "status": "active",
+    "lead": "Autonomous System",
+    "summary": "Local-first Autonomous Voice Utility & Response Agent built for AMD AI Hackathon.",
+    "created_at": "2026-09-17T08:00:00Z"
+  }
+]

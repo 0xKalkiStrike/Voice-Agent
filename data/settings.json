@@ -1,0 +1,11 @@
+{
+  "ai_mode": "local",
+  "model": "local-amd-rocm-q4",
+  "stt_provider": "whisper-local",
+  "tts_provider": "local-system",
+  "auto_approve_write": false,
+  "enable_memory": true,
+  "enable_web_search": true,
+  "theme": "dark",
+  "log_level": "INFO"
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "task-001",
+    "title": "Configure AMD ROCm local inference backend",
+    "status": "in_progress",
+    "priority": "high",
+    "category": "infrastructure",
+    "assignee": "AURA Agent",
+    "created_at": "2026-09-18T10:00:00Z",
+    "updated_at": "2026-09-18T11:00:00Z",
+    "description": "Ensure ROCm PyTorch and HIP drivers are detected and benchmarked for low latency voice response."
+  },
+  {
+    "id": "task-002",
+    "title": "Implement RAG document indexing pipeline",
+    "status": "completed",
+    "priority": "high",
+    "category": "ai",
+    "assignee": "AURA Agent",
+    "created_at": "2026-09-17T14:30:00Z",
+    "updated_at": "2026-09-18T09:15:00Z",
+    "description": "Extract text, chunk, embed and store document vectors into local JSON vector repository."
+  },
+  {
+    "id": "task-003",
+    "title": "Add prompt injection defense guardrails",
+    "status": "completed",
+    "priority": "critical",
+    "category": "security",
+    "assignee": "Security Specialist",
+    "created_at": "2026-09-17T16:00:00Z",
+    "updated_at": "2026-09-18T08:00:00Z",
+    "description": "Distinguish system instructions from untrusted document content and web search results."
+  },
+  {
+    "id": "task-004",
+    "title": "Benchmark TTFT and tokens per second",
+    "status": "open",
+    "priority": "medium",
+    "category": "performance",
+    "assignee": "Benchmark Engine",
+    "created_at": "2026-09-18T11:15:00Z",
+    "updated_at": "2026-09-18T11:15:00Z",
+    "description": "Measure and export actual local inference latency, STT/TTS roundtrip latency."
+  }
+]

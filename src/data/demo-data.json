@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "project": "AURA — AMD AI Hackathon entry",
+  "tasks": [
+    { "id": "t1", "title": "Wire deterministic planner to permission gate", "status": "done", "priority": "high", "owner": "arch" },
+    { "id": "t2", "title": "Mic capture with 16 kHz PCM16 downsampling and VAD", "status": "done", "priority": "high", "owner": "speech" },
+    { "id": "t3", "title": "Local AMD backend: llama.cpp + faster-whisper + Piper", "status": "open", "priority": "high", "owner": "amd" },
+    { "id": "t4", "title": "RAG pipeline: upload, chunk, TF-IDF + EMBED scoring, citations", "status": "open", "priority": "medium", "owner": "rag" },
+    { "id": "t5", "title": "Memory store with recall and destructive-delete confirm", "status": "open", "priority": "medium", "owner": "mem" },
+    { "id": "t6", "title": "Performance panel: measured latencies only", "status": "in_progress", "priority": "high", "owner": "telemetry" }
+  ],
+  "documents": [
+    {
+      "id": "d1",
+      "title": "AURA Requirements (PRD excerpt)",
+      "chunks": [
+        "AURA is a voice-first, action-oriented AI agent. It listens, plans, selects tools, executes approved actions, verifies results, updates memory, and responds by voice.",
+        "The data layer is JSON-file based behind a real API. The browser never reads or writes JSON files directly; it only talks to the store API.",
+        "Inference is local-first: provider interfaces allow swapping between deterministic offline planning and a local AMD ROCm runtime."
+      ]
+    },
+    {
+      "id": "d2",
+      "title": "AMD ROCm Blueprint notes",
+      "chunks": [
+        "llama.cpp with ROCm/HIP serves Qwen2.5-7B-Instruct-GGUF over an OpenAI-compatible endpoint.",
+        "faster-whisper streams STT at 16 kHz; Piper or Kokoro generates streamed TTS chunks.",
+        "Environment probing reports GPU utilization and measured tokens/sec — numbers are never fabricated."
+      ]
+    }
+  ]
+}
